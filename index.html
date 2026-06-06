@@ -1,225 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naga Marn | Data & Analytics Leader</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --bg: #0b1220;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --blue: #3b82f6;
-      --border: #243244;
-    }
+<title>Naga Marn | Data & Analytics Executive</title>
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+<meta name="description" content="Enterprise Data & Analytics Leader specializing in Data Products, Governance, Architecture, Engineering and AI-enabled transformation.">
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 24px;
-    }
+<style>
 
-    /* HEADER */
-    .header {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+:root{
+    --bg:#08111f;
+    --panel:#111827;
+    --panel-light:#172133;
+    --blue:#3b82f6;
+    --light-blue:#60a5fa;
+    --text:#f1f5f9;
+    --muted:#94a3b8;
+    --border:#23324a;
+}
 
-    .header h1 {
-      font-size: 3rem;
-      margin-bottom: 8px;
-      letter-spacing: -0.5px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .header h2 {
-      font-size: 1.2rem;
-      color: var(--blue);
-      font-weight: 500;
-    }
+html{
+    scroll-behavior:smooth;
+}
 
-    .summary {
-      margin-top: 20px;
-      color: var(--muted);
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 1.05rem;
-    }
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI',Arial,sans-serif;
+    line-height:1.7;
+}
 
-    /* SECTIONS */
-    .section {
-      margin-top: 50px;
-    }
+/* Navigation */
 
-    .section-title {
-      font-size: 1.4rem;
-      color: var(--blue);
-      margin-bottom: 15px;
-      border-left: 4px solid var(--blue);
-      padding-left: 10px;
-    }
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(8,17,31,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+}
 
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+}
 
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      padding: 18px;
-      border-radius: 10px;
-      color: var(--muted);
-    }
+.logo{
+    font-size:1.4rem;
+    font-weight:700;
+    color:#fff;
+}
 
-    .card strong {
-      color: var(--text);
-      display: block;
-      margin-bottom: 5px;
-    }
+.nav-links a{
+    color:#cbd5e1;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
 
-    /* EXPERIENCE */
-    .job {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+.nav-links a:hover{
+    color:var(--light-blue);
+}
 
-    .job-title {
-      color: var(--text);
-      font-weight: 600;
-    }
+/* Hero Image */
 
-    .job-meta {
-      color: var(--blue);
-      font-size: 0.9rem;
-      margin-bottom: 10px;
-    }
+.hero{
+    width:100%;
+    background:#000;
+}
 
-    .job ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted);
-    }
+.hero img{
+    width:100%;
+    display:block;
+}
 
-    /* LINKS */
-    .links {
-      text-align: center;
-      margin-top: 40px;
-    }
+/* Sections */
 
-    .links a {
-      display: inline-block;
-      margin: 6px;
-      padding: 10px 14px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--text);
-      text-decoration: none;
-      transition: 0.2s;
-    }
+.section{
+    padding:70px 25px;
+}
 
-    .links a:hover {
-      background: #1f2937;
-      border-color: var(--blue);
-    }
+.container{
+    max-width:1200px;
+    margin:auto;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-  </style>
+.section-title{
+    color:var(--light-blue);
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:25px;
+}
+
+.card h3{
+    color:var(--light-blue);
+    margin-bottom:10px;
+}
+
+/* Experience */
+
+.experience{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:30px;
+}
+
+.company{
+    color:var(--light-blue);
+    font-size:1.4rem;
+    font-weight:600;
+}
+
+.role{
+    color:#dbeafe;
+    margin-bottom:15px;
+}
+
+.experience ul{
+    padding-left:20px;
+}
+
+/* Metrics */
+
+.metrics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.metric{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.metric-number{
+    color:var(--light-blue);
+    font-size:2rem;
+    font-weight:700;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    margin:8px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--blue);
+    color:white;
+}
+
+.btn-secondary{
+    border:1px solid #475569;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+}
+
+@media(max-width:768px){
+
+.nav-links{
+    display:none;
+}
+
+.section{
+    padding:50px 20px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Naga Marn</div>
+
+        <div class="nav-links">
+            <a href="#leadership">Leadership</a>
+            <a href="#experience">Experience</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO IMAGE -->
+<section class="hero">
+    <img src="image(4).png" alt="Naga Marn Executive Portfolio">
+</section>
+
+<!-- LEADERSHIP -->
+<section class="section" id="leadership">
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <h1>Naga Marn</h1>
-    <h2>AI Data & Analytics Leader | • Architecture • Governance • Engineering</h2>
+<h2 class="section-title">Leadership Philosophy</h2>
 
-    <p class="summary">
-      Senior Data Leader with strong business acumen having 15+ years of experience building enterprise-scale data platforms,product governance frameworks,
-      and analytics systems driving customer experience and operational decision-making at scale.
-    </p>
-  </div>
+<div class="card">
 
-  <!-- KEY IMPACT -->
-  <div class="section">
-    <div class="section-title">Enterprise Impact</div>
+<p>
+I believe data is the bridge between information and intelligent action.
+My leadership approach combines enterprise governance, scalable architecture,
+data engineering excellence, and business alignment to transform complex
+data ecosystems into measurable outcomes.
+</p>
 
-    <div class="grid">
-      <div class="card"><strong>Scale</strong>50,000+ frontline agents incentive decisions (Multimillion-Dollar impact); 
-      Drive customer experience measured via NPS </div>
-      <div class="card"><strong>Scope</strong>Multi-domain CX + Workforce + Product data ecosystems</div>
-      <div class="card"><strong>Leadership</strong>Cross-functional enterprise teams;
-      Lead AI Forward Deployed Engineers</div>
-      <div class="card"><strong>Focus</strong>Analytics, Architecture, Data Governance, Engineering</div>
-    </div>
-  </div>
+<br>
 
-  <!-- Current Role -->
-  <div class="section">
-    <div class="section-title">Experience</div>
-
-    <div class="job">
-      <div class="job-title">Senior Manager – Subject Matter Expert</div>
-      <div class="job-meta">Comcast</div>
-      <ul>
-        <li>Led enterprise data governance across CX, Workforce, and incentive programs</li>
-        <li>Delivered scalable data architecture supporting enterprise analytics platforms</li>
-        <li>Enabled data-driven incentive optimization for large-scale frontline operations</li>
-        <li>Partnered with executive leadership on data strategy and decision systems</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="section">
-    <div class="section-title">Core Expertise</div>
-
-    <div class="grid">
-      <div class="card"><strong>Architecture & Analytics</strong>Enterprise data systems, CX, Workforce, Incentive model</div>
-      <div class="card"><strong>Governance & Data Engineering</strong>Product Standards, Quality, Compliance ;
-      ETL, Pipelines, Platforms(AWS|Teradata|Snowflake)</div>
-           
-    </div>
-  </div>
-
-  <!-- LINKS -->
-  <div class="links">
-    <a href="https://www.linkedin.com/in/nagamarn" target="_blank">LinkedIn</a>
-    <a href="mailto:ramaraomarni@gmail.com">Email</a>
-    <a href="Naga Marn Overview.docx" target="_blank">Profile</a>
-  </div>
-
-  <footer>
-    © <span id="year"></span> Naga Marn. All rights reserved.
-  </footer>
+<p>
+With more than 15 years of experience, I have led initiatives spanning
+Customer Experience, Workforce Analytics, Incentive Programs, Data Governance,
+Enterprise Architecture, and Data Products supporting large-scale operational ecosystems.
+</p>
 
 </div>
 
+</div>
+</section>
+
+<!-- IMPACT -->
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Leadership Impact</h2>
+
+<div class="metrics">
+
+<div class="metric">
+<div class="metric-number">50K+</div>
+Frontline Agents Impacted
+</div>
+
+<div class="metric">
+<div class="metric-number">15+</div>
+Years of Data & Leadership
+</div>
+
+<div class="metric">
+<div class="metric-number">Enterprise</div>
+Governance & Architecture
+</div>
+
+<div class="metric">
+<div class="metric-number">CX</div>
+Analytics & Incentives
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="experience">
+
+<div class="company">Comcast</div>
+
+<div class="role">
+Senior Manager – Data & Analytics
+</div>
+
+<ul>
+<li>Lead enterprise data governance, architecture, and analytics initiatives across Customer Experience and Workforce portfolios.</li>
+
+<li>Enable data-driven incentive optimization supporting large-scale frontline operations.</li>
+
+<li>Partner with executive leadership to establish data strategy, stewardship frameworks, and trusted decision systems.</li>
+
+<li>Drive enterprise data quality, governance, architecture, and operational excellence programs.</li>
+
+<li>Lead high-performing teams delivering scalable analytics and data product solutions.</li>
+</ul>
+
+</div>
+
+</div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section" id="expertise">
+<div class="container">
+
+<h2 class="section-title">Core Expertise</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Data Engineering</h3>
+Enterprise data pipelines, ETL modernization, scalable platforms, and data products.
+</div>
+
+<div class="card">
+<h3>Data Governance</h3>
+Stewardship, Metadata, Compliance, Quality management, and Trusted data ecosystems.
+</div>
+
+<div class="card">
+<h3>Architecture</h3>
+Modern enterprise architecture supporting analytics, AI, and business intelligence.
+</div>
+
+<div class="card">
+<h3>Analytics & Insights</h3>
+Customer Experience, Workforce Analytics, Incentive Optimization, and Executive Reporting.
+</div>
+
+<div class="card">
+<h3>Cloud & AI</h3>
+Google Cloud, Automation, AI-enabled Decision systems, and Digital Transformation.
+</div>
+
+<div class="card">
+<h3>Leadership</h3>
+Strategy, Stakeholder alignment, Organizational Transformation, and Talent development.
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+<div class="container">
+
+<h2 class="section-title">Certifications & Professional Development</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Google Cloud</h3>
+Cloud and modern data platform technologies.
+</div>
+
+<div class="card">
+<h3>Teradata Certified</h3>
+Enterprise data warehousing and advanced analytics.
+</div>
+
+<div class="card">
+<h3>Agile Leadership</h3>
+Scaled delivery, stakeholder management, and team leadership.
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<div class="container">
+
+<h2 class="section-title">Connect</h2>
+
+<div class="cta">
+
+<a href="https://www.linkedin.com/in/nagamarn" target="_blank" class="btn btn-primary">
+LinkedIn
+</a>
+
+<a href="mailto:ramaraomarni@gmail.com" class="btn btn-secondary">
+Email
+</a>
+
+<a href="Naga Marn Overview.docx" target="_blank" class="btn btn-primary">
+Resume
+</a>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© <span id="year"></span> Naga Marn. All rights reserved.
+</footer>
+
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
+
