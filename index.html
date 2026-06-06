@@ -3,48 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naga Marn | Data & Analytics Executive</title>
+  <title>Naga Marn | Data & Analytics Leader</title>
 
-  <link rel="stylesheet" href="assets/styles.css"/>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --blue: #3b82f6;
+      --border: #243244;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .header h2 {
+      font-size: 1.2rem;
+      color: var(--blue);
+      font-weight: 500;
+    }
+
+    .summary {
+      margin-top: 20px;
+      color: var(--muted);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.05rem;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-top: 50px;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      color: var(--blue);
+      margin-bottom: 15px;
+      border-left: 4px solid var(--blue);
+      padding-left: 10px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 10px;
+      color: var(--muted);
+    }
+
+    .card strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* EXPERIENCE */
+    .job {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .job-title {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .job-meta {
+      color: var(--blue);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .job ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    /* LINKS */
+    .links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      background: #1f2937;
+      border-color: var(--blue);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 
 <body>
 
-<header class="nav">
-  <div class="logo">Naga Marn</div>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="experience.html">Experience</a>
-    <a href="impact.html">Impact</a>
-    <a href="resume.pdf" target="_blank">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div class="container">
 
-<section class="hero">
-  <h1>Enterprise Data & Analytics Leader</h1>
-  <p>
-    I lead large-scale data organizations building governance, architecture, and analytics systems
-    that power customer experience and enterprise decision-making.
-  </p>
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Naga Marn</h1>
+    <h2>Data & Analytics Executive | Governance • Architecture • Engineering</h2>
 
-  <div class="cta">
-    <a class="btn primary" href="resume.pdf">Download Resume</a>
-    <a class="btn secondary" href="contact.html">Connect</a>
+    <p class="summary">
+      Senior Data Leader with 15+ years of experience building enterprise-scale data platforms, governance frameworks,
+      and analytics systems driving customer experience and operational decision-making at scale.
+    </p>
   </div>
-</section>
 
-<section class="highlights">
-  <div class="card">15+ Years Leadership</div>
-  <div class="card">Enterprise Data Platforms</div>
-  <div class="card">50K+ Agent Ecosystem Impact</div>
-  <div class="card">CX + Incentive Analytics</div>
-</section>
+  <!-- KEY IMPACT -->
+  <div class="section">
+    <div class="section-title">Enterprise Impact</div>
 
-<footer>
-  © <span id="year"></span> Naga Marn
-</footer>
+    <div class="grid">
+      <div class="card"><strong>Scale</strong>50,000+ frontline agents impacted</div>
+      <div class="card"><strong>Scope</strong>Multi-domain CX + Workforce data ecosystems</div>
+      <div class="card"><strong>Leadership</strong>Cross-functional enterprise teams</div>
+      <div class="card"><strong>Focus</strong>Data governance, architecture, analytics</div>
+    </div>
+  </div>
 
-<script src="assets/script.js"></script>
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-title">Senior Manager – Data & Analytics</div>
+      <div class="job-meta">Comcast</div>
+      <ul>
+        <li>Led enterprise data governance across CX, Workforce, and incentive programs</li>
+        <li>Delivered scalable data architecture supporting enterprise analytics platforms</li>
+        <li>Enabled data-driven incentive optimization for large-scale frontline operations</li>
+        <li>Partnered with executive leadership on data strategy and decision systems</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Core Expertise</div>
+
+    <div class="grid">
+      <div class="card"><strong>Data Engineering</strong>ETL, pipelines, platforms</div>
+      <div class="card"><strong>Governance</strong>Standards, quality, compliance</div>
+      <div class="card"><strong>Architecture</strong>Enterprise data systems</div>
+      <div class="card"><strong>Analytics</strong>CX, workforce, incentive models</div>
+    </div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="links">
+    <a href="https://www.linkedin.com/in/nagamarn" target="_blank">LinkedIn</a>
+    <a href="mailto:ramaraomarni@gmail.com">Email</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Naga Marn. All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
