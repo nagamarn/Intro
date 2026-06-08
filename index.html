@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-18">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Naga Marn | Data & Analytics Executive</title>
@@ -38,8 +38,7 @@ body{
     line-height:1.7;
 }
 
-/* Navigation */
-
+/* NAVIGATION */
 .navbar{
     position:sticky;
     top:0;
@@ -60,8 +59,9 @@ body{
 
 .logo{
     font-size:1.4rem;
-    font-weight:700;
-    color:#fff;
+    font-weight:800;
+    color:var(--light-blue);
+    letter-spacing:2px;
 }
 
 .nav-links a{
@@ -75,20 +75,74 @@ body{
     color:var(--light-blue);
 }
 
-/* Hero Image */
-
+/* HERO SECTION */
 .hero{
-    width:100%;
-    background:#000;
+    position:relative;
+    height:92vh;
+
+    background:
+        linear-gradient(
+            rgba(8,17,31,.55),
+            rgba(8,17,31,.90)
+        ),
+        url("image.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
 }
 
-.hero img{
+.hero-content{
+    max-width:1200px;
+    margin:auto;
     width:100%;
-    display:block;
+    padding:0 60px;
 }
 
-/* Sections */
+/* EXECUTIVE NAME */
+.hero-name{
+    font-size:6rem;
+    font-weight:900;
+    letter-spacing:4px;
+    line-height:1;
+}
 
+.hero-name span{
+    color:var(--light-blue);
+}
+
+/* TITLE */
+.hero-title{
+    margin-top:20px;
+    font-size:1.5rem;
+    color:#dbeafe;
+    letter-spacing:2px;
+}
+
+/* DIVIDER */
+.hero-divider{
+    width:120px;
+    height:4px;
+    background:var(--blue);
+    margin:25px 0;
+}
+
+/* SUBTITLE */
+.hero-subtitle{
+    max-width:850px;
+    color:#cbd5e1;
+    font-size:1.15rem;
+}
+
+/* BUTTONS */
+.hero-buttons{
+    margin-top:35px;
+}
+
+/* SECTIONS */
 .section{
     padding:70px 25px;
 }
@@ -104,8 +158,7 @@ body{
     margin-bottom:25px;
 }
 
-/* Cards */
-
+/* CARDS */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -124,8 +177,7 @@ body{
     margin-bottom:10px;
 }
 
-/* Experience */
-
+/* EXPERIENCE */
 .experience{
     background:var(--panel);
     border:1px solid var(--border);
@@ -148,8 +200,7 @@ body{
     padding-left:20px;
 }
 
-/* Metrics */
-
+/* METRICS */
 .metrics{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -170,12 +221,7 @@ body{
     font-weight:700;
 }
 
-/* CTA */
-
-.cta{
-    text-align:center;
-}
-
+/* BUTTONS */
 .btn{
     display:inline-block;
     padding:12px 20px;
@@ -199,8 +245,7 @@ body{
     transform:translateY(-2px);
 }
 
-/* Footer */
-
+/* FOOTER */
 footer{
     text-align:center;
     padding:40px;
@@ -208,14 +253,24 @@ footer{
     color:var(--muted);
 }
 
+/* MOBILE */
 @media(max-width:768px){
 
 .nav-links{
     display:none;
 }
 
-.section{
-    padding:50px 20px;
+.hero-name{
+    font-size:3rem;
+}
+
+.hero{
+    height:auto;
+    min-height:90vh;
+}
+
+.hero-content{
+    padding:60px 25px;
 }
 
 }
@@ -225,46 +280,69 @@ footer{
 
 <body>
 
+<!-- NAV -->
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo">Naga Marn</div>
+        <div class="logo">NAGA MARN</div>
 
         <div class="nav-links">
-            <a href="#leadership">Leadership</a>
-            <a href="#experience">Current Role</a>
+            <a href="#leadership">Profile</a>
+            <a href="#experience">Role</a>
             <a href="#expertise">Expertise</a>
             <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Connect</a>
         </div>
     </div>
 </nav>
 
-<!-- HERO IMAGE -->
-<!--<section class="hero">-->
-<!--<img src="image.png" alt="Naga Marn Executive Portfolio">-->
-<!--</section>-->
+<!-- HERO -->
+<section class="hero">
 
-<!-- LEADERSHIP -->
+    <div class="hero-content">
+
+        <div class="hero-name">
+            NAGA <span>MARN</span>
+        </div>
+
+        <div class="hero-title">
+            DATA & ANALYTICS EXECUTIVE
+        </div>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-subtitle">
+            Enterprise Data Products • Governance • Architecture • Engineering • AI Transformation
+            <br><br>
+            Transforming enterprise data into trusted intelligence and measurable business outcomes at scale.
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#experience" class="btn btn-primary">Current Role</a>
+            <a href="Naga Marn Preview.docx" target="_blank" class="btn btn-secondary">Resume</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROFILE -->
 <section class="section" id="leadership">
 <div class="container">
 
-<h2 class="section-title">Leadership Philosophy</h2>
+<h2 class="section-title">Executive Profile</h2>
 
 <div class="card">
 
 <p>
-I believe data is the bridge between information and intelligent action.
-My leadership approach combines enterprise governance, scalable architecture,
-data engineering excellence, and business alignment to transform complex
-data ecosystems into measurable outcomes.
+Senior Data & Analytics leader with 15+ years of experience driving enterprise-scale data platforms,
+governance frameworks, and analytics solutions that power customer experience and operational excellence.
 </p>
 
 <br>
 
 <p>
-With more than 15 years of experience, I have led initiatives spanning
-Customer Experience, Workforce Analytics, Incentive Programs, Data Governance,
-Enterprise Architecture, and Data Products supporting large-scale operational ecosystems.
+Specializing in translating complex data ecosystems into trusted intelligence systems that enable
+multimillion-dollar decision-making across large-scale organizations.
 </p>
 
 </div>
@@ -276,18 +354,18 @@ Enterprise Architecture, and Data Products supporting large-scale operational ec
 <section class="section">
 <div class="container">
 
-<h2 class="section-title">Leadership Impact</h2>
+<h2 class="section-title">Enterprise Impact</h2>
 
 <div class="metrics">
 
 <div class="metric">
 <div class="metric-number">50K+</div>
-Frontline Agents Impacted
+Agents Impacted
 </div>
 
 <div class="metric">
 <div class="metric-number">15+</div>
-Years of Data & Leadership
+Years Leadership
 </div>
 
 <div class="metric">
@@ -315,20 +393,13 @@ Analytics & Incentives
 
 <div class="company">Comcast</div>
 
-<div class="role">
-Senior Manager – Data & Analytics
-</div>
+<div class="role">Senior Manager – Data & Analytics</div>
 
 <ul>
-<li>Lead enterprise data governance, architecture, and analytics initiatives across Customer Experience and Workforce portfolios.</li>
-
-<li>Enable data-driven incentive optimization supporting large-scale frontline operations.</li>
-
-<li>Partner with executive leadership to establish data strategy, stewardship frameworks, and trusted decision systems.</li>
-
-<li>Drive operational excellence programs.</li>
-
-<li>Lead high-performing teams delivering scalable analytics and data product solutions.</li>
+<li>Lead enterprise data governance, architecture, and analytics across CX and Workforce domains.</li>
+<li>Enable incentive optimization for large-scale frontline operations.</li>
+<li>Drive data strategy, stewardship, and enterprise decision systems.</li>
+<li>Lead high-performing analytics and data product teams.</li>
 </ul>
 
 </div>
@@ -344,35 +415,12 @@ Senior Manager – Data & Analytics
 
 <div class="grid">
 
-<div class="card">
-<h3>Data Engineering</h3>
-Enterprise data pipelines, ETL modernization, scalable platforms, and data products.
-</div>
-
-<div class="card">
-<h3>Data Governance</h3>
-Stewardship, Metadata, Compliance, Quality management, and Trusted data ecosystems.
-</div>
-
-<div class="card">
-<h3>Architecture</h3>
-Modern enterprise architecture supporting analytics, AI, and business intelligence.
-</div>
-
-<div class="card">
-<h3>Analytics & Insights</h3>
-Customer Experience, Workforce Analytics, Incentive Optimization, and Executive Reporting.
-</div>
-
-<div class="card">
-<h3>Cloud & AI</h3>
-Google Cloud, Automation, AI-enabled Decision systems, and Digital Transformation.
-</div>
-
-<div class="card">
-<h3>Leadership</h3>
-Strategy, Stakeholder alignment, Organizational Transformation, and Talent development.
-</div>
+<div class="card"><h3>Data Engineering</h3>Enterprise pipelines and scalable platforms.</div>
+<div class="card"><h3>Governance</h3>Trusted data ecosystems and quality systems.</div>
+<div class="card"><h3>Architecture</h3>Modern enterprise data architecture.</div>
+<div class="card"><h3>Analytics</h3>CX and workforce intelligence systems.</div>
+<div class="card"><h3>Cloud & AI</h3>Automation and AI-enabled transformation.</div>
+<div class="card"><h3>Leadership</h3>Strategy, execution, and stakeholder alignment.</div>
 
 </div>
 
@@ -383,24 +431,13 @@ Strategy, Stakeholder alignment, Organizational Transformation, and Talent devel
 <section class="section" id="certifications">
 <div class="container">
 
-<h2 class="section-title">Certifications & Professional Development</h2>
+<h2 class="section-title">Certifications</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>Google Cloud</h3>
-Cloud and modern data platform technologies.
-</div>
-
-<div class="card">
-<h3>Teradata Certified</h3>
-Enterprise data warehousing and advanced analytics.
-</div>
-
-<div class="card">
-<h3>Agile Leadership</h3>
-Scaled delivery, stakeholder management, and team leadership.
-</div>
+<div class="card">Google Cloud Platform</div>
+<div class="card">Teradata Certified</div>
+<div class="card">Agile Leadership</div>
 
 </div>
 
@@ -413,16 +450,9 @@ Scaled delivery, stakeholder management, and team leadership.
 
 <h2 class="section-title">Connect</h2>
 
-<div class="cta">
-
-<a href="https://www.linkedin.com/in/nagamarn" target="_blank" class="btn btn-primary">
-ReachMe
-</a>
-
-<a href="Naga Marn Preview.docx" target="_blank" class="btn btn-primary">
-Resume
-</a>
-
+<div class="btn">
+<a href="https://www.linkedin.com/in/nagamarn" class="btn btn-primary">LinkedIn</a>
+<a href="mailto:ramaraomarni@gmail.com" class="btn btn-secondary">Email</a>
 </div>
 
 </div>
@@ -433,11 +463,8 @@ Resume
 </footer>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
-
-
